@@ -42,7 +42,7 @@ const ListedNFTs = () => {
             NFTs Listed for Sale
           </h2>
           <div className="mt-3 w-full flex flex-wrap justify-start md:justify-center">
-            {nfts.map((nft) => <NFTCard key={nft.tokenID} nft={nft} />)}
+            {nfts.map((nft) => <NFTCard key={nft.tokenId} nft={nft} />)}
           </div>
         </div>
       </div>
