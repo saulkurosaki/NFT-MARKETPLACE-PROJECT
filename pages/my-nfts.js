@@ -65,8 +65,6 @@ const MyNFTs = () => {
     }
   };
 
-  console.log(nfts);
-
   return (
     <div className="w-full flex justify-start items-center flex-col min-h-screen">
       <div className="w-full flexCenter flex-col">
@@ -104,7 +102,7 @@ const MyNFTs = () => {
               />
             </div>
             <div className="mt-3 w-full flex flex-wrap">
-              {nfts.map((nft) => <NFTCard key={nft.token} nft={nft} onProfilePage />)}
+              {nfts.map((nft) => <NFTCard key={nft.tokenId} nft={nft} onProfilePage />)}
             </div>
           </div>
         )}
