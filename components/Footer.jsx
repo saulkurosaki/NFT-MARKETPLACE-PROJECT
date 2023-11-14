@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 

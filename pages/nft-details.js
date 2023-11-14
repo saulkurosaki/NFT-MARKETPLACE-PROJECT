@@ -2,9 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import { setLocal } from 'web3modal';
 import { NFTContext } from '../context/NFTContext';
-import { Loader, NFTCard, Button, Modal } from '../components';
+import { Loader, Button, Modal } from '../components';
 import images from '../assets';
 import { shortenAddress } from '../utils/shortenAddress';
 
