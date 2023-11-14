@@ -20,8 +20,6 @@ const Home = () => {
   const [activeSelect, setActiveSelect] = useState('Recently added');
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log(nfts);
-
   useEffect(() => {
     fetchNFTs()
       .then((items) => {
