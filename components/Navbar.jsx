@@ -97,6 +97,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    setTheme('dark');
+  }, []);
+
+  useEffect(() => {
     checkActive(active, setActive, router);
   }, [router.pathname]);
 
@@ -163,7 +167,7 @@ const Navbar = () => {
               height={20}
               alt="Close"
               onClick={() => setIsOpen(false)}
-              className={theme === 'light' && 'filter invert'}
+              className={theme === 'light' ? 'filter invert' : ''}
             />
           )
           : (
@@ -174,7 +178,7 @@ const Navbar = () => {
               height={25}
               alt="Menu"
               onClick={() => setIsOpen(true)}
-              className={theme === 'light' && 'filter invert'}
+              className={theme === 'light' ? 'filter invert' : ''}
             />
           )}
 
